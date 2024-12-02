@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    images: {
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "pbs.twimg.com",
+        },
+        {
+          protocol: "https",
+          hostname: "static.wikia.nocookie.net",
+        },
+      ],
+    },
+  };
+  
+  module.exports = nextConfig;
